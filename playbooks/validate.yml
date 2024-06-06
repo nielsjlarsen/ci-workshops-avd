@@ -1,6 +1,6 @@
 ---
 - name: "Run Fabric states validation"
-  hosts:"{{ target_hosts }}"
+  hosts: "{{ target_hosts }}"
   connection: local
   gather_facts: false
   collections:

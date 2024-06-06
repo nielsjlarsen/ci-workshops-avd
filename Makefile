@@ -24,7 +24,7 @@ cvp-site-1: ## Deploy Configs via eAPI
 
 .PHONY: validate-site-1
 validate-site-1: ## Validate Configs
-	ansible-playbook playbooks/validate.yml -i sites/site_1/inventory.yml
+	ansible-playbook playbooks/validate.yml -i sites/site_1/inventory.yml -e "target_hosts=SITE1_FABRIC"
 
 ########################################################
 # Site 2
@@ -48,7 +48,7 @@ cvp-site-2: ## Deploy Configs via eAPI
 
 .PHONY: validate-site-2
 validate-site-2: ## Validate Configs
-	ansible-playbook playbooks/validate.yml -i sites/site_2/inventory.yml
+	ansible-playbook playbooks/validate.yml -i sites/site_2/inventory.yml -e "target_hosts=SITE2_FABRIC"
 
 ########################################################
 # WAN & Hosts - Lab Prep
