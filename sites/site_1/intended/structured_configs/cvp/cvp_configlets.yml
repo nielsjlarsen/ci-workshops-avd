@@ -7,7 +7,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4094\nspanning-tree mst 0 priority 16384\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     10\n   name Ten\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-leaf2_Po1\n   no shutdown\n   switchport\n
     \  switchport mode trunk\n   switchport trunk group MLAG\n!\ninterface Port-Channel2\n
@@ -36,7 +36,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4094\nspanning-tree mst 0 priority 16384\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     10\n   name Ten\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-leaf1_Po1\n   no shutdown\n   switchport\n
     \  switchport mode trunk\n   switchport trunk group MLAG\n!\ninterface Port-Channel2\n
@@ -65,7 +65,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4094\nspanning-tree mst 0 priority 16384\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     20\n   name Twenty\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-leaf4_Po1\n   no shutdown\n   switchport\n
     \  switchport mode trunk\n   switchport trunk group MLAG\n!\ninterface Port-Channel2\n
@@ -94,7 +94,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4094\nspanning-tree mst 0 priority 16384\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     20\n   name Twenty\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-leaf3_Po1\n   no shutdown\n   switchport\n
     \  switchport mode trunk\n   switchport trunk group MLAG\n!\ninterface Port-Channel2\n
@@ -123,7 +123,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4093-4094\nspanning-tree mst 0 priority 4096\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     10\n   name Ten\n!\nvlan 20\n   name Twenty\n!\nvlan 4093\n   name LEAF_PEER_L3\n
     \  trunk group LEAF_PEER_L3\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-spine2_Po1\n   no shutdown\n   switchport\n
@@ -170,7 +170,7 @@ cvp_configlets:
     server 192.168.0.1 iburst local-interface Management0\n!\nspanning-tree mode mstp\nno
     spanning-tree vlan-id 4093-4094\nspanning-tree mst 0 priority 4096\n!\naaa authorization
     exec default local\n!\nno enable password\nno aaa root\n!\nusername arista privilege
-    15 role network-admin secret sha512 $6$workshop$.U60fatmN0BPqPrJ4xJo9b4kHTuddSaRBUaI3431s.tHeIbQBSl/jr5HOsOhnxwLYgeCWVayGOxpX7enL2ZW30\n!\nvlan
+    15 role network-admin secret sha512 $6$workshop$Rar.pcBPTY0WxWcyPF5kqPYzh0aDO16XgtuOs28bJK55dVfbsQtvhlSD7v1I.FuRRpDVgFpu86pSQS4SKcgUH0\n!\nvlan
     10\n   name Ten\n!\nvlan 20\n   name Twenty\n!\nvlan 4093\n   name LEAF_PEER_L3\n
     \  trunk group LEAF_PEER_L3\n!\nvlan 4094\n   name MLAG_PEER\n   trunk group MLAG\n!\ninterface
     Port-Channel1\n   description MLAG_PEER_s1-spine1_Po1\n   no shutdown\n   switchport\n

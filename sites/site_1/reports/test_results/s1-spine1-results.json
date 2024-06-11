@@ -178,26 +178,6 @@
     ],
     "description": "Verifies the status of the provided interfaces.",
     "result": "success",
-    "custom_field": "Interface Ethernet7 - P2P_LINK_TO_WANCORE_Ethernet2 = 'up'"
-  },
-  {
-    "name": "s1-spine1",
-    "test": "VerifyInterfacesStatus",
-    "categories": [
-      "interfaces"
-    ],
-    "description": "Verifies the status of the provided interfaces.",
-    "result": "success",
-    "custom_field": "Interface Ethernet8 - P2P_LINK_TO_WANCORE_Ethernet2 = 'up'"
-  },
-  {
-    "name": "s1-spine1",
-    "test": "VerifyInterfacesStatus",
-    "categories": [
-      "interfaces"
-    ],
-    "description": "Verifies the status of the provided interfaces.",
-    "result": "success",
     "custom_field": "Interface Loopback0 - Router_ID = 'up'"
   },
   {
