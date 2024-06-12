@@ -22,6 +22,10 @@ deploy-site-1: ## Deploy Configs via eAPI
 cvp-site-1: ## Deploy Configs via eAPI
 	ansible-playbook playbooks/cvp1.yml -i sites/site_1/inventory.yml
 
+.PHONY: reset-cvp-1
+reset-cvp-1: ## Reset CVP to base lab setup
+	ansible-playbook playbooks/reset-cvp-1.yml -i sites/site_1/inventory.yml
+
 .PHONY: validate-site-1
 validate-site-1: ## Validate Configs
 	ansible-playbook playbooks/validate.yml -i sites/site_1/inventory.yml -e "target_hosts=SITE1_FABRIC"
@@ -45,6 +49,10 @@ deploy-site-2: ## Deploy Configs via eAPI
 .PHONY: cvp-site-2
 cvp-site-2: ## Deploy Configs via eAPI
 	ansible-playbook playbooks/cvp2.yml -i sites/site_2/inventory.yml
+
+.PHONY: reset-cvp-2
+reset-cvp-2: ## Reset CVP to base lab setup
+	ansible-playbook playbooks/reset-cvp-2.yml -i sites/site_2/inventory.yml
 
 .PHONY: validate-site-2
 validate-site-2: ## Validate Configs
