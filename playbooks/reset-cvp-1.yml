@@ -1,0 +1,44 @@
+---
+- name: Build Switch configuration
+  hosts: cvp
+  gather_facts: false
+
+  tasks:
+    - name: "Configure devices on {{inventory_hostname}}"
+      arista.cvp.cv_device_v3:
+        devices: '{{CVP_DEVICES}}'
+        state: present
+        apply_mode: strict
+
+      vars:
+        CVP_DEVICES:
+          - fqdn: s1-leaf1
+            parentContainerName: S1-Leaf
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-leaf1'
+          - fqdn: s1-leaf2
+            parentContainerName: S1-Leaf
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-leaf2'
+          - fqdn: s1-leaf3
+            parentContainerName: S1-Leaf
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-leaf3'
+          - fqdn: s1-leaf4
+            parentContainerName: S1-Leaf
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-leaf4'
+          - fqdn: s1-spine1
+            parentContainerName: S1-Spine
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-spine1'
+          - fqdn: s1-spine2
+            parentContainerName: S1-Spine
+            configlets:
+              - 'ATD-INFRA'
+              - 'BASE_s1-spine2'
